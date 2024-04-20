@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "MarshieGuard",
+    "name": "VirusTotal Checker",
     "description": "Check URL with VirusTotal API",
     "version": "1.0",
-    "permissions": ["activeTab", "https://www.virustotal.com/*", "storage"],
+    "permissions": ["activeTab", "https://www.virustotal.com/*", "storage","https://haveibeenpwned.com/api/*","https://www.virustotal.com/*"],
     "background": {
-      "scripts": ["background.js"],
+      "scripts": ["background.js","background_2.js"],
       "persistent": false
     },
     "browser_action": {

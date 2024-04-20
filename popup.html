@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarshieGuard</title>
+    <title>VirusTotal Checker</title>
     <link rel="stylesheet" href="popup.css">
     <script src="popup.js"></script>
-    <script> src="content.js"</script>
+    <script src="popup2.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">MarshieGuard</h1>
-        <div class="input-container">
-            <input type="text" id="urlInput" placeholder="Enter URL">
-            <button id="checkButton">Check</button>
+    <h1 style="color:white; text-align:center;"> Security Check</h1>
+    <div id="header">
+        <div id="health">
+            <progress id="health_bar" value="100" max="100"></progress>
         </div>
-        <div id="loader" class="hide"><img src="images/loadingIdle.gif" alt="Loading..."></div>
-        <div id="result" class="hide"></div>
-        <div id="image-container" class="hide">
-            <img src="images/sadmarshie.gif" id="sad" alt="Sad marshmallow">
-            <img src="images/happymarshie.gif" id="happy" alt="Happy marshmallow">
+        <div id="outer-character">
+        <div id="character">
+             <img src="images/marsh_alt.png" id="marsh">
         </div>
-        <progress id="health" value="100" max="100" class="hide"></progress>
+        </div>
+    </div>
+    <h2 style="color:white; text-align:center;">Enter URL / Email</h2>
+    <div class="center">
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button id="checkButton">CHECK</button>
+    </div>
+    <div class="center">
+        <img src="images/loading.gif" class="hide loading" id="loader">
+        <div id="result" style="text-align:center"></div> 
+    </div>
+    <hr><br><br>
+    <div class="center">
+        <input type="email" id="urlInput2" placeholder="Enter Email">
+        <button id="checkButton2">CHECK</button>
+    </div>
+    <div class="center" style="padding-top: 30px;">
+        <img src="images/loading.gif" class="hide loading" id="loader2">
+        <div id="result2" style="text-align:center; padding-top:25px;"></div>
     </div>
 </body>
 </html>
