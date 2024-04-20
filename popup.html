@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VirusTotal Checker</title>
+    <title>MarshieGuard</title>
     <link rel="stylesheet" href="popup.css">
     <script src="popup.js"></script>
     <script> src="content.js"</script>
 </head>
 <body>
-    <h1>Enter URL to check:</h1>
-    <input type="text" id="urlInput" placeholder="Enter URL">
-    <button id="checkButton">Check</button>
-    <img src="images/loadingIdle.gif" class="hide" id="loader">
-    <img src="images/sadmarshie.gif" class="hide" id="sad">
-    <img src="images/happymarshie.gif" class="hide" id="happy">
-    <div id="result"></div>
-    <progress id="health" value="100" max="100"></progress>
+    <div class="container">
+        <h1 class="title">MarshieGuard</h1>
+        <div class="input-container">
+            <input type="text" id="urlInput" placeholder="Enter URL">
+            <button id="checkButton">Check</button>
+        </div>
+        <div id="loader" class="hide"><img src="images/loadingIdle.gif" alt="Loading..."></div>
+        <div id="result" class="hide"></div>
+        <div id="image-container" class="hide">
+            <img src="images/sadmarshie.gif" id="sad" alt="Sad marshmallow">
+            <img src="images/happymarshie.gif" id="happy" alt="Happy marshmallow">
+        </div>
+        <progress id="health" value="100" max="100" class="hide"></progress>
+    </div>
 </body>
 </html>
