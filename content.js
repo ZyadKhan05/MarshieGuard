@@ -1,8 +1,3 @@
-//adds the event listener to the entire website page. DOMContentLoaded refers to a process where the js
-//only runs after all the html, css, etc. has run, so that the js doesn't encounter any issues
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOMContentLoaded event fired");
-
   // Select the target node to observe for mutations
   const targetNode = document.body;
   console.log("Target node:", targetNode);
@@ -43,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
   observer.observe(targetNode, observerConfig);
   console.log("Observer started observing mutations");
 
+  const anchors = document.querySelectorAll("a");
+  for (const a of anchors) {
+    applyHoverEffect(a);
+  }
 
   // Function to apply hover effect to a link
   function applyHoverEffect(link) {
@@ -58,4 +57,4 @@ document.addEventListener("DOMContentLoaded", function() {
           link.classList.remove('hover-effect');
       })
   }
-})
+
