@@ -1,3 +1,4 @@
+
 .hide{
     display:none;
 }
@@ -5,6 +6,16 @@
 .loading{
     height:30px;
     width:30px;
+}
+
+#sad,
+#happy {
+    height: 30px;
+    width: 30px;
+}
+
+.center img {
+    margin: 5px; /* Add some margin to separate the images */
 }
 
 #marsh{
