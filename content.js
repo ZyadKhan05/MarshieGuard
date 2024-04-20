@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Callback function to handle mutations. This checks to see if any changes have been made to the 
   //page which we don't currently have, in our case would be external links which we have not added.
-  function handleMutations(mutationsList) {
+  function handleMutations(mutationsList, oberver) {
     //this code essentially runs through all the mutations which have occurred, and checks whether
     //it is an <a> tag or is the same link domain as the current page.
       mutationsList.forEach(mutation => {
