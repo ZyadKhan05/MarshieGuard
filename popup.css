@@ -6,3 +6,11 @@ img{
     height:300px;
     width:300px;
 }
+
+.hover-effect {
+    transition: color 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    color: red;
+}
