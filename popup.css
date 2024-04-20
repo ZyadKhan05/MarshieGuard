@@ -67,3 +67,11 @@ button:hover {
     margin-top: 20px;
     width: 100%;
 }
+
+.hover-effect {
+    transition: color 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    color: red;
+}
