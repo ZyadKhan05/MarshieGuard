@@ -1,3 +1,5 @@
+<!-- popup.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +10,35 @@
     <script src="popup.js"></script>
 </head>
 <body>
-    <h1>Enter URL to check:</h1>
-    <input type="text" id="urlInput" placeholder="Enter URL">
-    <button id="checkButton">Check</button>
-    <img src="images/loading.gif" class="hide" id="loader">
-    <div id="result"></div>
-    <progress id="health" value="100" max="100"></progress>
+    <h1>VirusTotal Checker</h1>
+    <p>Enter a URL to check or hover over a link on a webpage.</p>
+    
+    <!-- Form for URL input -->
+    <form id="urlForm">
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button type="submit">Check URL</button>
+    </form>
+
+    <!-- Result display for URL scanning -->
+    <div id="urlResult" class="result">
+        <img src="images/loading.gif" class="loader" id="urlLoader">
+        <div id="urlScanResults" class="hide">
+            <p id="urlLink"></p>
+            <p id="urlPositives"></p>
+            <p id="urlTotal"></p>
+            <progress id="urlHealth" value="100" max="100"></progress>
+        </div>
+    </div>
+
+    <!-- Result display for link scanning -->
+    <div id="linkResult" class="result">
+        <img src="images/loading.gif" class="loader" id="linkLoader">
+        <div id="linkScanResults" class="hide">
+            <p id="linkUrl"></p>
+            <p id="linkPositives"></p>
+            <p id="linkTotal"></p>
+            <progress id="linkHealth" value="100" max="100"></progress>
+        </div>
+    </div>
 </body>
 </html>
