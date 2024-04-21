@@ -12,7 +12,7 @@
 ### Demonstration
 
 ### Poster Advertisement
-<img src="images/MarshyFighting.gif"" width=50%>
+<img src="images/MarshyFighting.gif" width=50%>
 
 
 
