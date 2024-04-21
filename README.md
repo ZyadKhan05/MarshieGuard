@@ -1,8 +1,5 @@
 # MarshiesGuard
-A streamlined process for reviewing course details and professor evaluations integrated as a browser extension on https://app.testudo.umd.edu/soc/ using the PlanetTerp API. 
 
-Download *Testudo++* as a Chrome Extension [here](https://chromewebstore.google.com/detail/testudo++/fgjllkiccpfacobekfcnldelggcgnnic).  
-Or search for it in the Google Chrome Web Store!
 
 ## Table of Contents
 - [Previews](#Previews)
@@ -20,8 +17,7 @@ Or search for it in the Google Chrome Web Store!
 ### Poster Advertisement
 <img src="assets/FinalPosterImg.jpg" width=50%>
 
-I should've been a graphic design major b/c this poster is just too cool tbh.  
-It's supposed to be a reference to Michelangelo's [The Creation of Adam](https://en.wikipedia.org/wiki/The_Creation_of_Adam).
+
 
 ## Features
 - Displays average course GPA
