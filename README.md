@@ -1,5 +1,8 @@
 # MarshiesGuard
 
+### Marshie!!!
+<img src="images/MarshyFighting.gif" width=50%>
+
 
 ## Table of Contents
 - [Introduction](#Inspiration)
@@ -26,9 +29,6 @@ It essentially allows a user to copy and paste a link into the Chrome extension,
 - Javascript, HTML, CSS
 - [Chrome Extension API](https://developer.chrome.com/docs/extensions/reference/api)
 
-
-### Marshie!!!
-<img src="images/MarshyFighting.gif" width=50%>
 
 ## Reflection
 ## Challenges we ran into
