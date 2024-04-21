@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "MarshieGuard",
     "description": "Check URL with VirusTotal API",
     "version": "1.0",
