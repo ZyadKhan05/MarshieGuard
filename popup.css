@@ -8,6 +8,16 @@
     width:30px;
 }
 
+.dancing{
+    height: 50px;
+    width: 50px;
+}
+
+.logo{
+    height: 50px;
+    width: 260px;
+}
+
 #sad,
 #happy {
     height: 30px;
@@ -54,7 +64,7 @@ body{
 button{
     width: 70px;
     height: 45px;
-    background-color:rgb(190, 213, 217);
+    background-color:orange;
     color:rgb(6, 42, 150);
     font-weight:bold;
     transition: 0.3s;
@@ -85,7 +95,63 @@ button:hover{
     margin-bottom: -15px;
 }
 
-#result,#result2{
+.center2{
+    display:flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+
+#result{
     color:white;
     font-size: 0.8rem;
 }
+.result-text {
+    color: white;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#result2 {
+    display: block;
+    color: orange;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    max-height: 100px; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the maximum height */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    margin-top:auto;
+    padding-top: 10px;
+    padding: 5px; /* Add padding */
+    position: relative; /* Ensure relative positioning */
+    z-index: 1; /* Set a higher z-index to ensure it's above other elements */
+}
+
+
+
+
+.result-text p {
+    margin: 5px 0;
+}
+
+.center-engaging {
+    position: relative;
+    height: 80px; /* Adjust height as needed */
+}
+
+#engaging {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* Adjust the width */
+    height: 100px; /* Maintain aspect ratio */
+    max-height: 100%; /* Set maximum height */
+}
+
+  

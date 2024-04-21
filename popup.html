@@ -7,37 +7,54 @@
   <link rel="stylesheet" href="popup.css">
   <script src="popup.js"></script>
   <script src="popup2.js"></script>
+  <style>
+    .cartoony-title {
+      display: flex;
+     align-items: center;
+  }
+
+  </style>
 </head>
 <body>
-  <h1 style="color:white; text-align:center;">MarshieGuard</h1>
+  <h1 class="cartoony-title"><img src="images/MarshieGuard.png" class="logo"><img src="images/DancingMarshie.gif" class="dancing"></h1> 
   <div id="header">
     <div id="outer-character">
       <div id="character">
-        <img src="images/marsh_alt.png" id="marsh">
+        <br>
+        <img src="images/MarshyLog.gif" id="marsh">
       </div>
     </div>
   </div>
-  <h2 style="color:white; text-align:center;">Enter URL / Email</h2>
+  <!-- Move engaging.gif above the text field -->
+<div class="center-engaging">
+  <img src="images/engaging.gif" id="engaging" class="hide">
+</div>
 
-  <div class="center">
-    <input type="text" id="urlInput" placeholder="Enter URL">
-    <button id="checkButton">CHECK</button>
-  </div>
+<!-- Text field and check button -->
+<div class="center">
+  <input type="text" id="urlInput" placeholder="Enter URL" required>
+  <button id="checkButton">CHECK</button>
+</div>
+
+
+  <!-- Result section -->
   <div class="center">
     <div id="result" style="text-align:center;"></div> 
     <img src="images/loadingIdle.gif" class="loading hide" id="loader">
-    <img src="images/sadmarshie.gif" class="hide" id="sad">
-    <img src="images/happymarshie.gif" class="hide" id="happy">
+    <img src="images/MarshyFighting.gif" class="hide" id="fighting">
   </div>
   <hr><br><br>
 
-  <div class="center">
+  <!-- Second text field and check button -->
+  <div class="center2">
     <input type="email" id="urlInput2" placeholder="Enter Email">
     <button id="checkButton2">CHECK</button>
   </div>
+
+  <!-- Result section for the second check -->
   <div class="center" style="padding-top: 30px;">
     <img src="images/loadingIdle.gif" class="loading hide" id="loader2">
-    <div id="result2" style="text-align:center; padding-top:25px;"></div>
+    <div id="result2" class="result-text" style="padding-top: 25px;"></div>
   </div>
 </body>
 </html>
