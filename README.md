@@ -26,4 +26,4 @@
 
 ## Reflection
 ### Conclusion
-As a first time BitCamp project (2024), we wanted to focus on Cybersecurity for our projet
+As a first-time BitCamp project (2024), we wanted to focus on Cybersecurity for our project
