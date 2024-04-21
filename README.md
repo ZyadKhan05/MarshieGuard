@@ -1,7 +1,7 @@
 # MarshiesGuard
 
 ### Marshie!!!
-<img src="images/MarshyFighting.gif" width=50%>
+<img src="images/MarshyFighting.gif" width=40%>
 
 
 ## Table of Contents
