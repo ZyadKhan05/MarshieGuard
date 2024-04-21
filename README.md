@@ -5,7 +5,6 @@
 - [Previews](#Previews)
 - [Features](#Features)
 - [Skills and Technologies](#Skills-and-Technologies)
-- [Meta](#Meta)
 - [Reflection](#Reflection)
 
 ## Previews
