@@ -1,4 +1,4 @@
-# MarshiesGuard
+# MarshieGuard
 
 ### Marshie!!!
 <img src="images/MarshyFighting.gif" width=40%>
