@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    const api_key = 'de6e6f384c68c49d2b1ad391b0c0fb177cd0a36a1b3a6defa0e7bdea1c338fb5'; 
+    const api_key = '8347b397c10e3940fd2f03c7bbf83f6e2702e7bd7c4f9aaddfc052ff33337b2d'; 
     const submit_url = 'https://www.virustotal.com/vtapi/v2/url/scan';
     const report_url = 'https://www.virustotal.com/vtapi/v2/url/report';
 
