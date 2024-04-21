@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         engaging.src = "images/engaging.gif"; 
         resultDiv.style.color = 'orange'; 
         resultDiv.style.fontSize = '20px'; 
-    
+
         if (url !== '') {
             chrome.runtime.sendMessage({url: url}, function(response) {
                 engaging.classList.add('hide');
@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         marshy.classList.remove('hide');
                         const marshyHeight = marshy.offsetHeight;
                         marshy.style.top = `calc(37% - ${marshyHeight / 2}px)`;
+
+                        // Adjust height of elements below engaging.gif
+                        resultEmailDiv.style.paddingTop = `${marshyHeight}px`;
                     } else if (response.total > 0) {
                         resultDiv.textContent = `Detected: ${response.positives}, Total: ${response.total}`;
 
@@ -50,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         marshy.classList.remove('hide');
                         const marshyHeight = marshy.offsetHeight;
                         marshy.style.top = `calc(34% - ${marshyHeight / 2}px)`;
+
+                        // Adjust height of elements below engaging.gif
+                        resultEmailDiv.style.paddingTop = `${marshyHeight}px`;
                     } else {
                         resultDiv.textContent = 'He got lost [Failed]';
                     }

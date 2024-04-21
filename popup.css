@@ -1,12 +1,34 @@
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #000;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #725c42 ;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+  
+  
 .hide{
     display:none;
 }
 
 .loading{
-    height:30px;
-    width:30px;
+    height:60px;
+    width:60px;
 }
+
+#loader {
+    height: 200px; /* Adjust the height as needed */
+    width: auto; /* Set width to auto to maintain aspect ratio */
+}
+
 
 .dancing{
     height: 50px;
@@ -15,7 +37,7 @@
 
 .logo{
     height: 50px;
-    width: 260px;
+    width: 250px;
 }
 
 #sad,
@@ -93,6 +115,7 @@ button:hover{
     justify-content: center;
     margin-top: -10px;
     margin-bottom: -15px;
+
 }
 
 .center2{
@@ -124,14 +147,14 @@ button:hover{
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
     max-height: 100px; /* Set maximum height */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds the maximum height */
     margin-bottom: 10px; /* Add margin at the bottom */
-    margin-top:auto;
+    margin-top: auto;
     padding-top: 10px;
-    padding: 5px; /* Add padding */
     position: relative; /* Ensure relative positioning */
     z-index: 1; /* Set a higher z-index to ensure it's above other elements */
-}
+    padding-right: 20px; /* Add padding to prevent content from touching the scrollbar */
+  }
+  
 
 
 
@@ -142,16 +165,15 @@ button:hover{
 
 .center-engaging {
     position: relative;
-    height: 80px; /* Adjust height as needed */
+    height: 72px; /* Adjust height as needed */
 }
 
 #engaging {
-    position: absolute;
+    position: relative;
     left: 50%;
-    transform: translateX(-50%);
     width: 400px; /* Adjust the width */
-    height: 100px; /* Maintain aspect ratio */
-    max-height: 100%; /* Set maximum height */
+    height: 90px; /* Maintain aspect ratio */
+    transform: translateX(-50%);
 }
 
   
